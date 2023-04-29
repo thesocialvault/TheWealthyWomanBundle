@@ -140,14 +140,12 @@ h1 {
     color: white;
     letter-spacing: 0.1em;
     text-shadow: 0 0 8px black;
-    text-align: justify;
 }
 
 h2 {
     font-size: 40px;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
-    /* font-style: italic; */
     text-transform: capitalize;
     letter-spacing: 0.1em;
     color: black;
@@ -212,15 +210,11 @@ li {
     text-align: left;
 }
 #home-div {
-    background: linear-gradient(to top right, rgba(37, 11, 0, 0.3), rgba(163, 98, 0, 0.185)),
-    /* url(images/sunflowers-happy-flipped.jpg); */
-    /* url(images/benjamin-wedemeyer-BreAvBaE0DI-unsplash.jpg);  */
-    url(images/dance.jpg);
-
+    background: linear-gradient(to top right, rgba(37, 11, 0, 0.3), rgba(163, 98, 0, 0.185)), url(images/dance.jpg);
     background-position: center ;
     background-size: cover;
     /* background-attachment: fixed; */
-    height: calc(100vh - 100px); /* 700px */
+    height: calc(100vh - 100px); 
 }
 #home-div .button, #home-div h1, #home-div .sub-h {
     text-align: center;
@@ -271,8 +265,6 @@ li {
     width: 100%;
     /* min-width: 196px; */
     height: 400px;
-    /* display: grid; */
-    /* grid-template-rows: 250px 80px; */
     grid-gap: none;
     background-color: rgb(36, 36, 36);
     padding: 1em;
@@ -290,8 +282,6 @@ li {
     padding: 8px 0;
     background-color: rgb(36, 36, 36);
     color: white;
-    /* display: grid; */
-    /* grid-template-columns: 3fr 1fr; */
 }
 .polaroid-details h4 {
     margin: 0;
@@ -310,7 +300,6 @@ li {
 
 #testimonials-div {
     padding-bottom: 0;
-    /* width: 80%; */
 }
 #community-chat {
     max-width: 800px;
@@ -406,8 +395,6 @@ li {
     -webkit-backdrop-filter: blur(10px);
     padding: 0;
     width: 100%;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
 }
 #opportunities-div img {
     width: 100%;
@@ -432,9 +419,11 @@ li {
     width: 80%;
     margin: 0 auto;
     padding: 60px 0;
-    /* text-align: justify; */
 }
-form .div {
+
+/* CUSTOM HTML FORM */
+
+/* form .div {
     padding: 0;
     margin: 50px auto;
 }
@@ -475,7 +464,7 @@ form label {
     font-weight: normal;
     font-size: medium;
     text-align: left;
-}
+} */
 
 .klaviyo-div {
     width: 800px;
@@ -505,16 +494,9 @@ form label {
     object-fit: cover;
     filter: brightness(70%);
 }
-.resources-grid .bottom {
-    object-position: center 85%;
-}
 .resources-grid .top {
     object-position: top;
 }
-.resources-grid .mid-top {
-    object-position: center 40%;
-}
-
 
 
 .grid {
@@ -524,13 +506,11 @@ form label {
     margin: 2em auto 0;
     text-align: left;
 }
-
 .grid div img {
     width: 100%;
     height: 280px;
     object-fit: cover;
     pointer-events: none; 
-    /* border-radius: 20px 0; */
 }
 
 #img-2 {
@@ -564,7 +544,7 @@ form label {
 
 .video-container {
     position: relative;
-    padding-bottom: 125%; /* 500px height / 400px width * 100% = 125% */
+    padding-bottom: 125%; /* 500px height / 400px width = 125% */
     overflow: hidden;
 }
 iframe {
@@ -581,27 +561,15 @@ iframe {
 }
 
 
-/* IMAGES */
-
-.parallax {
-    /* height: 150px; */
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    /* margin: 30px 0; */
-}
-
-
 /* LINKS AND BUTTONS */
 
 p a, b a, li a, label a {
     color: var(--accent);
-    text-underline-offset: 8px;
-    transition: all 300ms;
+    text-decoration: none;
 }
 p a:hover, b a:hover, li a:hover, label a:hover {
+    text-decoration: underline;
     text-underline-offset: 10px;
-    transition: all 300ms;
 }
 
 .button {
@@ -646,21 +614,6 @@ p a:hover, b a:hover, li a:hover, label a:hover {
     margin: 0 auto 80px;
     padding: 0;
 }
-
-/* .back-btn {
-    position: absolute;
-    font-size: large;
-    color: var(--accent);
-    top: 84px;
-    text-decoration: none;
-    letter-spacing: 0.1em;
-    transition: all 200ms;
-    cursor: pointer;
-}
-.back-btn :hover{
-    color: var(--primary);
-    transition: all 200ms;
-} */
 
 
 .acc-grid {
@@ -732,12 +685,6 @@ footer a, footer p {
 
 .links a {
     margin: 30px;
-}
-
-.links a:hover, a:hover {
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    transition: all 300ms ease;
 }
 
 i {
@@ -891,9 +838,6 @@ i {
         margin: 50px auto -100px;
     }
 
-    .center-div {
-        width: 90%;
-    }
 
     .acc-grid {
         grid-template-columns: 1fr;
@@ -948,11 +892,6 @@ i {
         margin: 2em auto 0;
     }
 
-    .parallax {
-        height: 80px;
-        background-attachment: scroll;
-        background-position-y: -80px;
-    }
 
     .btn {
         font-size: 12px;
