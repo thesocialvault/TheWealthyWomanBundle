@@ -481,21 +481,77 @@ form label {
 .resources-grid div {
     display: flex;
     justify-content: center;
-}
-.resources-grid .sub-h {
-    position: absolute;
-    text-align: center; 
-    width: 20%;
-    margin: 70px auto;
-}
-.resources-grid img {
-    width: 100%;
+    align-items: center;
+    padding: 2em;
+    position: relative; /* to enable absolute positioning of the overlay */
+    overflow: hidden; 
     height: 200px;
-    object-fit: cover;
-    filter: brightness(70%);
 }
-.resources-grid .top {
-    object-position: top;
+.resources-grid div::before { /* overlay */
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36, 19, 0, 0.4);
+    z-index: -1;
+}
+.resources-grid div::after { /* background image */
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -2; /* move it behind the overlay */
+}
+#social-media::after { 
+    background: url(images/social.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#remote-work::after { 
+    background: url(images/van-life-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#personal-finance::after { 
+    background: url(images/invest.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#career::after { 
+    background: url(images/business.jpg);
+    background-size: cover;
+    background-position: top;
+}
+#motherhood::after { 
+    background: url(images/motherhood.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#side-hustles::after { 
+    background: url(images/side-hustles.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#online-business::after { 
+    background: url(images/online-business.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#empowerment-manifestation::after { 
+    background: url(images/empowerment.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#branding::after { 
+    background: url(images/branding.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.resources-grid .sub-h {
+    text-align: center; 
 }
 
 
@@ -555,6 +611,7 @@ iframe {
     height: 100%;
     margin-top: -200px;
 }
+
 
 .creators-grid div p {
     font-style: italic;
@@ -883,7 +940,7 @@ i {
         width: 80%;
         margin: 70px auto;
     }
-    .resources-grid img {
+    .resources-grid div {
         height: 150px;
     }
 
