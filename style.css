@@ -508,46 +508,73 @@ form label {
     background: url(images/social.jpg);
     background-size: cover;
     background-position: center;
+
+    width: 100%;
+    height: 100%;
 }
 #remote-work::after { 
     background: url(images/van-life-2.jpg);
     background-size: cover;
     background-position: center;
+
+    width: 100%;
+    height: 100%;
 }
 #personal-finance::after { 
     background: url(images/invest.jpg);
     background-size: cover;
     background-position: center;
+
+    width: 100%;
+    height: 100%;
 }
 #career::after { 
     background: url(images/business.jpg);
     background-size: cover;
     background-position: top;
+
+    width: 100%;
+    height: 100%;
 }
 #motherhood::after { 
     background: url(images/motherhood.jpg);
     background-size: cover;
     background-position: center;
+
+    width: 100%;
+    height: 100%;
 }
 #side-hustles::after { 
     background: url(images/side-hustles.jpg);
     background-size: cover;
     background-position: center;
+
+    width: 100%;
+    height: 100%;
 }
 #online-business::after { 
     background: url(images/online-business.jpg);
     background-size: cover;
     background-position: center;
+
+    width: 100%;
+    height: 100%;
 }
 #empowerment-manifestation::after { 
     background: url(images/empowerment.jpg);
     background-size: cover;
     background-position: center;
+
+    width: 100%;
+    height: 100%;
 }
 #branding::after { 
     background: url(images/branding.jpg);
     background-size: cover;
     background-position: center;
+
+    width: 100%;
+    height: 100%;
 }
 
 .resources-grid .sub-h {
