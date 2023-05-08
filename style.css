@@ -251,8 +251,10 @@ li {
     margin: 50px auto -100px;
     display: flex;
 }
-#devices .btn {
-    box-shadow: none;
+@media (min-width: 1500px) {
+    #devices img {
+        width: 60%;
+    }
 }
 
 .polaroid-container {
