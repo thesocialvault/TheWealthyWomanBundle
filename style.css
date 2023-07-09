@@ -257,6 +257,54 @@ li {
     }
 }
 
+/* PRODUCTS */
+#products-div {
+    width: 90%;
+    padding-bottom: 0;
+    margin-top: 30px;
+}
+.products-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 30px auto 0;
+}
+.product-card {
+    flex-basis: calc(33.33% - 32px);
+    min-width: 360px;
+    max-width: 500px;
+    margin: 16px;
+    flex-grow: 1;
+}
+.product-card img {
+    width: 100%;
+    object-fit: cover;
+}
+.product-details {
+    width: 100%;
+    padding: 8px 0;
+}
+.product-details h4 {
+    margin: 0;
+    font-size: 20px;
+}
+.product-details p, .product-details li {
+    font-size: medium;
+    margin: 5px 0 0;
+    /* color: white; */
+}
+.product-details li {
+    font-size: medium;
+    margin-left: 1em;
+}
+/* .product-details a, .product-details a:hover {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+} */
+
+
+/* CREATORS FROM PREVIOUS COLLABS */
 .polaroid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -302,6 +350,7 @@ li {
 
 #testimonials-div {
     padding-bottom: 0;
+    width: 90%;
 }
 #community-chat {
     max-width: 800px;
@@ -619,12 +668,20 @@ form label {
 }
 
 
-.creators-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2em 10%; 
+.testimonials-grid {
+    display: flex;
+    flex-wrap: wrap;
     margin: 2em auto 0;
     text-align: left;
+    justify-content: space-evenly;
+}
+
+.testimonials-grid div {
+    margin: 16px;
+    flex-basis: calc(33.33% - 32px);
+    min-width: 250px;
+    max-width: 400px;
+    flex-grow: 1;
 }
 
 .video-container {
@@ -632,7 +689,7 @@ form label {
     padding-bottom: 125%; /* 500px height / 400px width = 125% */
     overflow: hidden;
 }
-iframe {
+.video-container iframe {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -641,9 +698,13 @@ iframe {
     margin-top: -200px;
 }
 
-
-.creators-grid div p {
+.testimonials-grid h3 {
+    margin: 0;
+}
+.testimonials-grid div p {
     font-style: italic;
+    margin: 10px 0;
+    font-size: medium;
 }
 
 
@@ -879,6 +940,10 @@ i {
         text-align: left;
     }
 
+    .testimonials-grid div p{
+        font-size: 14px;
+    }
+
     nav {
         height: 80px;
         padding: 1.2em 1em;
@@ -973,8 +1038,7 @@ i {
         height: 150px;
     }
 
-    .creators-grid {
-        grid-template-columns: 1fr;
+    .testimonials-grid {
         margin: 2em auto 0;
     }
 
