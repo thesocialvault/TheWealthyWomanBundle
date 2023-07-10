@@ -428,8 +428,10 @@ li {
     text-align: left;
 }
 #empowering-div img {
-    height: 400px;
+    max-height: 400px;
+    max-width: 90%;
     margin: auto;
+
 }
 
 #opportunities-div {
@@ -1041,6 +1043,10 @@ i {
     .testimonials-grid {
         margin: 2em auto 0;
     }
+    .testimonials-grid div {
+        min-width: 90%;
+    }
+    
 
 
     .btn {
@@ -1063,6 +1069,10 @@ i {
 
     form {
         width: 90%;
+    }
+
+    .product-card {
+        min-width: 90%;
     }
 
 }
